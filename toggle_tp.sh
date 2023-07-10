@@ -1,6 +1,7 @@
 #!/bin/sh
 # File Name: toggle-tochpad.sh
 # Porpous: Toggle the touchpad on/off.
+# works with xorg but not in Xwayland
 
 # Get the id number of the touchpad.
 tp_id=`xinput list | grep -i touchpad | awk '{ print $6 }' | sed 's/id=//'`
